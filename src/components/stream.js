@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import './styles.css'
 
-class Contact extends Component {
+class Stream extends Component {
     render(){
         return(
-            <div className='contact'>
+            <div className='stream'>
                 <h1> </h1>
             </div>
         )
     }
 }
 
-export default Contact
+export default Stream

@@ -1,0 +1,43 @@
+.home {
+    background-image: url(../images/gs.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.stream {
+    background-image: url('../images/julian.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.social {
+    background-image: url('../images/gary.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.contact {
+    background-image: url('../images/marlon.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}

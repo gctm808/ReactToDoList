@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import {NavLink, Route} from 'react-router-dom'
 import {spring, AnimatedSwitch} from 'react-router-transition'
 import Home from './home.js'
-import About from './about.js'
+import Stream from './stream.js'
+import Social from './social.js'
 import Contact from './contact.js'
 import './nav.css'
 
@@ -77,7 +78,8 @@ class Nav extends Component {
             <div id="dashboard">
                 <div className="nav" onClick={this.showMenu}>
                     <NavLink exact to='/' className='navLink' activeClassName='is-active'>Home</NavLink>
-                    <NavLink exact to='/about'  className='navLink' activeClassName='is-active'>About</NavLink>
+                    <NavLink exact to='/stream'  className='navLink' activeClassName='is-active'>Stream Us</NavLink>
+                    <NavLink exact to='/social'  className='navLink' activeClassName='is-active'>Follow Us</NavLink>
                     <NavLink exact to='/contact'  className='navLink' activeClassName='is-active'>Contact</NavLink>
                 </div>
                 <AnimatedSwitch
@@ -88,7 +90,8 @@ class Nav extends Component {
                     className="content"
                 >
                     <Route exact path='/' component={Home} />
-                    <Route exact path='/about' component={About} />
+                    <Route exact path='/stream' component={Stream} />
+                    <Route exact path='/social' component={Social} />
                     <Route exact path='/contact' component={Contact} />
                 </AnimatedSwitch>
             </div>
