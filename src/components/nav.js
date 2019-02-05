@@ -38,15 +38,47 @@ function bounce(val) {
     });
 }
 
+
 class Nav extends Component {
+    constructor(props){
+        super(props)
+
+        this.state={
+            navBarOpen: false
+        }
+
+        this.showMenu = this.showMenu.bind(this)
+    }
+
+    showMenu(){
+        let links = document.getElementsByClassName('navLink')
+       
+        if(!this.state.navBarOpen){
+            for(let i = 0; i < links.length; i++){
+                links.item(i).classList.add('showLink')
+            }
+
+            this.setState({
+                navBarOpen: true
+            })
+        } else {
+            for(let i = 0; i < links.length; i++){
+                links.item(i).classList.remove('showLink')
+            }
+            this.setState({
+                navBarOpen: false
+            })
+        }
+
+    }
 
     render(){
         return(
             <div id="dashboard">
-                <div className="nav">
-                    <NavLink exact to='/'>Home</NavLink>
-                    <NavLink exact to='/about'>About</NavLink>
-                    <NavLink exact to='/contact'>Contact</NavLink>
+                <div className="nav" onClick={this.showMenu}>
+                    <NavLink exact to='/' className='navLink' activeClassName='is-active'>Home</NavLink>
+                    <NavLink exact to='/about'  className='navLink' activeClassName='is-active'>About</NavLink>
+                    <NavLink exact to='/contact'  className='navLink' activeClassName='is-active'>Contact</NavLink>
                 </div>
                 <AnimatedSwitch
                     atEnter={bounceTransition.atEnter}

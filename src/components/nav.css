@@ -2,6 +2,34 @@
     position: relative;
   }
   
-  .content > div {
+.content > div {
     position: absolute;
-  }
+}
+
+.nav {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.navLink {
+    text-decoration: none;
+    text-align: center;
+    display: none;
+    color: black;
+}
+
+.showLink {
+    display: block;
+}
+
+.is-active {
+    display:block;
+    color: goldenrod;
+}
+
+.displayAll {
+    display: block;
+}
