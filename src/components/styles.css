@@ -3,10 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(1px);
+    filter: blur(2px);
+    filter: opacity(.6);
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    width: 95vw;
 }
 
 .stream {
@@ -14,9 +14,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(1px);
+    filter: blur(2px);
+    filter: opacity(.6);
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
     overflow: hidden;
 }
 
@@ -25,9 +26,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(1px);
+    filter: blur(2px);
+    filter: opacity(.6);
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
     overflow: hidden;
 }
 
@@ -36,8 +38,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(1px);
+    filter: blur(2px);
+    filter: opacity(.6);
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
     overflow: hidden;
 }
