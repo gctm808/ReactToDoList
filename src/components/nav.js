@@ -5,6 +5,7 @@ import Home from './home.js'
 import Stream from './stream.js'
 import Social from './social.js'
 import Contact from './contact.js'
+import Footer from './footer.js'
 import './nav.css'
 
 const bounceTransition = {
@@ -94,6 +95,9 @@ class Nav extends Component {
                     <Route exact path='/social' component={Social} />
                     <Route exact path='/contact' component={Contact} />
                 </AnimatedSwitch>
+                <div className='footerContainer'>
+                    <Footer />
+                </div>
             </div>
         )
     }

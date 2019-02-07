@@ -31,3 +31,10 @@
     display:block;
     color: goldenrod;
 }
+
+.footerContainer {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
