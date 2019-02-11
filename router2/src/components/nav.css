@@ -1,0 +1,40 @@
+.content {
+    position: relative;
+  }
+  
+.content > div {
+    position: absolute;
+}
+
+.nav {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    background-color: black;
+}
+
+.navLink {
+    text-decoration: none;
+    text-align: center;
+    display: none;
+    color: white;
+    
+}
+
+.showLink {
+    display: block;
+}
+
+.is-active {
+    display:block;
+    color: goldenrod;
+}
+
+.footerContainer {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
