@@ -4,6 +4,7 @@
   
 .content > div {
     position: absolute;
+    width: 100vw;
 }
 
 .nav {
