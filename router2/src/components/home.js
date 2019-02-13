@@ -5,12 +5,12 @@ import './styles.css'
 const Home = () => {
     return(
         <div className='home'>
-            <h1>GOLD SHADES</h1>
-            
             <img src={require('../images/logo.png')} alt='logo' 
-            height='200px' width='350px' />
+            height='100px' width='300px' />
             <h2>NEW ALBUM OUT NOW!</h2>
-            <button className='listenButton'>
+            <img src={require('../images/album.jpg')} alt='album' 
+            height='150px' width='150px' /><br />
+            <button className='button'>
                 <NavLink exact to='/stream' className='listenButton_link'>
                 Listen / Purchase</NavLink>
             </button>

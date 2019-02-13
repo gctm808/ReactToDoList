@@ -11,7 +11,7 @@
     padding-top: 5vh;
 }
 
-.listenButton {
+.button {
     border-radius: 5px;
     background-color: goldenrod;
     border-color: goldenrod;
@@ -71,4 +71,5 @@
 .purchaseLinks {
     display: flex;
     flex-direction: column;
+    width: 40vw;
 }
