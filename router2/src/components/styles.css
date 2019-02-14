@@ -1,20 +1,34 @@
-.home {
-    /*background-image: url(../images/gs.PNG);
+.background {
+    background-image: url(../images/gs.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
-    filter: opacity(.6);
-    height: 100vh;
-    width: 95vw;*/
+    filter: opacity(.4);
+    height: 92vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+
+.home {
+    position: relative;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 5px;
+}
+
+.home h2 {
+    padding-top: 100px;
+}
+
+.album {
+    margin: 15px 0;
 }
 
 .button {
     border-radius: 5px;
-    background-color: goldenrod;
-    border-color: goldenrod;
+    background-color: gold;
+    border-color: gold;
 }
 
 .listenButton_link {
@@ -25,51 +39,83 @@
 }
 
 .stream {
-    /*background-image: url('../images/julian.PNG');
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.stream_bg {
+    background-image: url('../images/julian.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
-    filter: opacity(.6);
-    height: 100vh;
-    width: 95vw;
-    overflow: hidden;*/
+    filter: opacity(.4);
+    height: 92vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+
+.purchaseLinks {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.purchaseLinks button {
+    width: 42vw;
+    margin: 7px 0;
+}
+
+.purchaseLinks_divider {
+    flex-direction: column;
+    flex: 50%;
 }
 
 .social {
-    /*background-image: url('../images/gary.PNG');
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.social_bg {
+    background-image: url('../images/gary.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
-    filter: opacity(.6);
-    height: 100vh;
-    width: 95vw;
-    overflow: hidden;*/
+    filter: opacity(.4);
+    height: 92vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
 }
 
 .contact {
-    /*background-image: url('../images/marlon.PNG');
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.contact_bg {
+    background-image: url('../images/marlon.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
-    filter: opacity(.6);
-    height: 100vh;
-    width: 95vw;
-    overflow: hidden;*/
+    filter: opacity(.4);
+    height: 92vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
 }
 
 .footer {
     display: flex;
     justify-content: flex-end;
     background-color: black;
-    color: goldenrod;
+    color: gold;
     font-size: 12px;
-}
-
-.purchaseLinks {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
 }

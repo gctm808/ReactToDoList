@@ -5,6 +5,7 @@ import './styles.css'
 const Social = () => {
     return(
         <div className='social'>
+            <div className='social_bg' />
             <h1>STAY CONNECTED WITH US</h1>
             <img src={require('../images/igPlaceholder.png')} alt='placeholder' height='300px' width='300px'/>
             <Twitter />
