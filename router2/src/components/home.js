@@ -12,8 +12,8 @@ const Home = () => {
             <img src={require('../images/album.jpg')} alt='album' 
             height='150px' width='150px' className='album'/><br />
             <button className='button'>
-                <NavLink exact to='/stream' className='listenButton_link'>
-                Listen / Purchase</NavLink>
+                <NavLink exact to='/stream' className='button_link'>
+                Listen / Purchase &rarr;</NavLink>
             </button>
         </div>
     )

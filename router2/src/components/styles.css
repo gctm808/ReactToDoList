@@ -31,9 +31,9 @@
     border-color: gold;
 }
 
-.listenButton_link {
+.button_link {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     font-size: 16px;
     color: black;
 }
@@ -55,6 +55,13 @@
     position: absolute;
     z-index: -1;
     top: 0px;
+}
+
+#spotify_loading {
+    background: url('../images/load.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .purchaseLinks {
@@ -81,16 +88,14 @@
 }
 
 .social_bg {
-    background-image: url('../images/gary.PNG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url('../images/gary.PNG') no-repeat;
     filter: opacity(.4);
     height: 92vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
     top: 0px;
+    left: -60px;
 }
 
 .socialLinks {
@@ -123,6 +128,22 @@
     position: absolute;
     z-index: -1;
     top: 0px;
+}
+
+.nextPerformances {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nextPerformances_div {
+    height: 20vh;
+    width: 80vw;
+    overflow-y: scroll;
+    border: 2px solid gold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px;
+    padding: 5px;
 }
 
 .footer {
