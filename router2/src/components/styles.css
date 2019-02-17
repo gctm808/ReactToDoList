@@ -38,6 +38,10 @@
     color: black;
 }
 
+.home .button_link {
+    font-size: 20px;
+}
+
 .stream {
     position: relative;
     text-align: center;
@@ -48,27 +52,36 @@
     background-image: url('../images/julian.PNG');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     filter: opacity(.4);
     height: 92vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
-    top: 0px;
+    top: 0;
+    right: -50px;
 }
 
-#spotify_loading {
-    background: url('../images/load.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.streamHeader {
+    display: flex;
+    line-height: 25px;
+    text-align: left;
+    padding: 10px 0 10px 30px;
+}
+
+#smallText {
+    font-size: 18px;
+}
+
+#spotifyPlayer {
+    text-align: left;
+    padding-left: 30px;
 }
 
 .purchaseLinks {
     display: flex;
     align-items: center;
     width: 100vw;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .purchaseLinks button {
@@ -83,7 +96,7 @@
 
 .social {
     position: relative;
-    text-align: center;
+    text-align: right;
     padding-top: 5px;
 }
 
@@ -98,12 +111,29 @@
     left: -60px;
 }
 
+.social h1 {
+    text-align: center;
+}
+
+.insta {
+    padding-right: 40px;
+}
+
+.socialTwitterContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
 .socialLinks {
+    flex: 20%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: -38vh;
-    left: 7vw;
+    justify-content: center;
+}
+
+.twitter {
+    flex: 80%;
+    padding-right: 20px;
 }
 
 .socialLinks a img {
@@ -149,7 +179,7 @@
 .footer {
     display: flex;
     justify-content: flex-end;
-    background-color: black;
-    color: gold;
+    background-color: whitesmoke;
+    color: black;
     font-size: 12px;
 }

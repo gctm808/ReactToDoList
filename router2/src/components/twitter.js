@@ -10,7 +10,8 @@ const Twitter = () => {
     }}
     options={{
       username: 'goldshades',
-      height: '200'
+      height: '260',
+      width: '270'
     }}
   />
     )

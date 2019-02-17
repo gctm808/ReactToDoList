@@ -12,15 +12,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 2px solid black;
-    background-color: black;
+    border-bottom: 1px solid black;
+    background-color: whitesmoke;
 }
 
 .navLink {
     text-decoration: none;
     text-align: center;
     display: none;
-    color: white;
+    color: black;;
     
 }
 
@@ -30,11 +30,11 @@
 
 .is-active {
     display:block;
-    color: gold;
+    color: #ffcc26;
 }
 
 .footerContainer {
-    background-color: black;
+    background-color: whitesmoke;
     width: 100%;
     position: absolute;
     bottom: 0;
