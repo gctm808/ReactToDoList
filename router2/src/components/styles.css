@@ -29,6 +29,7 @@
     border-radius: 5px;
     background-color: gold;
     border-color: gold;
+    cursor: pointer;
 }
 
 .button_link {
@@ -51,14 +52,23 @@
 .stream_bg {
     background-image: url('../images/julian.PNG');
     background-repeat: no-repeat;
-    background-size: cover;
     filter: opacity(.4);
     height: 92vh;
-    width: 100vw;
+    width: 80vw;
     position: absolute;
     z-index: -1;
     top: 0;
-    right: -50px;
+    right: 0;
+}
+
+.stream_bg_color {
+    background: linear-gradient(to right, rgb(145, 144, 144), white);
+    height:92vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    filter: opacity(.4);
 }
 
 .streamHeader {
@@ -104,15 +114,30 @@
     background: url('../images/gary.PNG') no-repeat;
     filter: opacity(.4);
     height: 92vh;
-    width: 100vw;
+    width: 120vw;
     position: absolute;
     z-index: -1;
-    top: 0px;
-    left: -60px;
+    top: 0;
+    left: -80px;
+}
+
+.social_bg_color {
+    background: linear-gradient(to left, rgb(116, 116, 116), white);
+    height:92vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    filter: opacity(.4);
 }
 
 .social h1 {
     text-align: center;
+}
+
+.goldFont {
+    color: goldenrod;
 }
 
 .insta {

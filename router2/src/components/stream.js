@@ -5,6 +5,7 @@ const Stream = () => {
     return(
         <div className='stream'>
             <div className='stream_bg' />
+            <div className='stream_bg_color' />
             <div class='streamHeader'>
                 <h1><span id='smallText'>STREAM</span><br />"GOLD SHADES"</h1>
             </div>

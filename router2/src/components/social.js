@@ -6,7 +6,8 @@ const Social = () => {
     return(
         <div className='social'>
             <div className='social_bg' />
-            <h1>STAY CONNECTED<br />WITH US</h1>
+            <div className='social_bg_color' />
+            <h1>STAY <span className='goldFont'>CONNECTED</span> WITH US</h1>
         
             <img src={require('../images/igPlaceholder.png')} alt='placeholder' height='225px' width='225px'
             className='insta' />
