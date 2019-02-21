@@ -30,12 +30,12 @@
 
 .is-active {
     display:block;
-    color: #ffcc26;
+    color: #f7bd00;
 }
 
 .footerContainer {
     background-color: whitesmoke;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
