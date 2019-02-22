@@ -1,0 +1,75 @@
+/*Content first, screen size second*/
+
+  @media only screen and (max-width : 399px) {
+    
+  }
+
+/* Smartphones (portrait and landscape) */
+  @media only screen and (min-width : 400px) {
+    
+  }
+  
+  /* Tablet Portrait("Mobile" Design from here down) */
+  @media only screen and (min-width : 600px) {
+    .nextPerformances_div {
+        width: 50vw;
+        height: 30vh;
+    }
+
+  }
+  
+  /* Tablet Landscape("Desktop" Design from here up) */
+  @media only screen and (min-width : 900px) {
+    .nav {
+       border-bottom: none; 
+       flex-direction: initial;
+       justify-content: space-around;
+    }
+
+    .navLink {
+        display: block;
+    }
+
+    .border_dec {
+        height: 85vh;
+        width: 85vw;
+        border: 5px solid white;
+        position: absolute;
+        top: 5vh;
+        left: 8vw;
+    }
+
+    
+  }
+  
+  /* Desktops */
+  @media only screen and (min-width : 1200px) {
+    .home h2 {
+        font-size: 30px;
+    }
+
+    .background {
+        height: 94vh;
+        filter: opacity(.6);
+    }
+
+    .stream_bg {
+        height: 94vh;
+        filter: opacity(.6);
+    }
+
+    .social_bg {
+        height: 94vh;
+        filter: opacity(.6);
+    }
+
+    .contact_bg {
+        height: 94vh;
+        filter: opacity(.6);
+    }
+  }
+  
+  /* Big Screen */
+  @media only screen and (min-width : 1800px) {
+    /* Styles */
+  }

@@ -7,28 +7,3 @@
   font-family: 'BenchNine', sans-serif;
 }
 
-/*Content first, screen size second*/
-/* Smartphones (portrait and landscape) */
-@media only screen and (max-width : 599px) {
-  /* Styles */
-}
-
-/* Tablet Portrait("Mobile" Design from here down) */
-@media only screen and (min-width : 600px) {
-  /* Styles */
-}
-
-/* Tablet Landscape */
-@media only screen and (min-width : 900px) {
-  /* Styles */
-}
-
-/* Desktops */
-@media only screen and (min-width : 1200px) {
-  /* Styles */
-}
-
-/* Big Screen */
-@media only screen and (min-width : 1800px) {
-  /* Styles */
-}

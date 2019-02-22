@@ -1,14 +1,58 @@
+.content {
+    position: relative;
+  }
+  
+.content > div {
+    position: absolute;
+    width: 100vw;
+}
+
+#logo {
+    z-index: 2;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.nav {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background-color: #e5edee;
+}
+
+.navLink {
+    text-decoration: none;
+    text-align: center;
+    display: none;
+    color: black;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.showLink {
+    display: block;
+}
+
+.is-active {
+    display:block;
+    color: #f7bd00;
+}
+
 .background {
-    background-image: url(../images/gs.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     filter: opacity(.4);
     height: 92vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
     top: 0px;
+    left: 0;
+    text-align: center;
 }
 
 .home {
@@ -18,7 +62,7 @@
 }
 
 .home h2 {
-    padding-top: 100px;
+    padding-top: 40vh;
 }
 
 .album {
@@ -50,15 +94,13 @@
 }
 
 .stream_bg {
-    background-image: url('../images/julian.PNG');
-    background-repeat: no-repeat;
     filter: opacity(.4);
     height: 92vh;
-    width: 80vw;
+    width: 100vw;
     position: absolute;
     z-index: -1;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .stream_bg_color {
@@ -119,23 +161,22 @@
 }
 
 .social_bg {
-    background: url('../images/gary.PNG') no-repeat;
     filter: opacity(.4);
-    height: 91vh;
+    height: 92vh;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
 }
 
 .social_bg_color {
-    background: linear-gradient(to left, rgb(116, 116, 116), white);
+    background: linear-gradient(to left, rgb(88, 88, 88), #ccc);
     height:92vh;
-    width: 50vw;
-    position: fixed;
+    width: 95vw;
+    position: absolute;
     top: 0;
-    right: 0;
+    left: -20px;
     z-index: -2;
     filter: opacity(.4);
 }
@@ -177,16 +218,13 @@
 }
 
 .contact_bg {
-    background-image: url('../images/marlon.PNG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     filter: opacity(.4);
     height: 92vh;
     width: 100vw;
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
-    top: 0px;
 }
 
 .nextPerformances {
@@ -205,10 +243,22 @@
     padding: 5px;
 }
 
+.contactFields {
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+}
+
 .footer {
     display: flex;
     justify-content: flex-end;
     background-color: whitesmoke;
     color: black;
     font-size: 12px;
+}
+
+.footerContainer {
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }

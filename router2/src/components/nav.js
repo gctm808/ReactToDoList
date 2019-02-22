@@ -6,7 +6,8 @@ import Stream from './stream.js'
 import Social from './social.js'
 import Contact from './contact.js'
 import Footer from './footer.js'
-import './nav.css'
+import './styles.css'
+import './mediaQueries.css'
 
 const bounceTransition = {
     // start in a transparent, upscaled state

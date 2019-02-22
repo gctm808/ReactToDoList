@@ -4,7 +4,7 @@ import './styles.css'
 const Stream = () => {
     return(
         <div className='stream'>
-            <div className='stream_bg' />
+            <img src={require('../images/julian.png')} alt='julian' className='stream_bg' />
             <div className='stream_bg_color' />
             <div className='pageHeader'>
                 <h1><span className='smallText'>STREAM</span><br />"GOLD SHADES"</h1>

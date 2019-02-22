@@ -1,11 +1,12 @@
 import React from 'react'
 import Twitter from './twitter.js'
 import './styles.css'
+import './mediaQueries.css'
 
 const Social = () => {
     return(
         <div className='social'>
-            <div className='social_bg' />
+            <img src={require('../images/gary.png')} alt='gary' className='social_bg' />
             <div className='pageHeader centerText'>
                 <h1><span className='smallText'>STAY</span><br />CONNECTED</h1>
             </div>
