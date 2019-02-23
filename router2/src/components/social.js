@@ -10,8 +10,7 @@ const Social = () => {
             <div className='pageHeader centerText'>
                 <h1><span className='smallText'>STAY</span><br />CONNECTED</h1>
             </div>
-            <img src={require('../images/igPlaceholder.png')} alt='placeholder' height='225px' width='225px'
-            className='insta' />
+            <img src={require('../images/igPlaceholder.png')} alt='placeholder' className='insta' />
         
             <div className='socialTwitterContainer'>
                 <div className='socialLinks'>

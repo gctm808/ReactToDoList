@@ -5,6 +5,7 @@
 .content > div {
     position: absolute;
     width: 100vw;
+    height: 70vh;
 }
 
 #logo {
@@ -21,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     border-bottom: 1px solid black;
-    background-color: #e5edee;
+    background: linear-gradient(to right, #d4dfdd, #d9e2e3, #eff2f5);
 }
 
 .navLink {
@@ -29,10 +30,28 @@
     text-align: center;
     display: none;
     color: black;
+    position: relative;
 }
 
-.navLink:hover {
-    text-decoration: underline;
+.navLink::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navLink:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .showLink {
@@ -46,7 +65,7 @@
 
 .background {
     filter: opacity(.4);
-    height: 92vh;
+    height: 88vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
@@ -62,11 +81,18 @@
 }
 
 .home h2 {
-    padding-top: 40vh;
+    padding-top: 35vh;
+}
+
+#logo {
+    height: 16vh;
+    width: 55vw;
 }
 
 .album {
-    margin: 15px 0;
+    height: 25vh;
+    width: 25vw;
+    margin: 10px 0;
 }
 
 .button {
@@ -95,7 +121,7 @@
 
 .stream_bg {
     filter: opacity(.4);
-    height: 92vh;
+    height: 88vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
@@ -105,7 +131,7 @@
 
 .stream_bg_color {
     background: linear-gradient(to right, rgb(145, 144, 144), white);
-    height:92vh;
+    height:88vh;
     width: 50vw;
     position: absolute;
     top: 0;
@@ -116,15 +142,18 @@
 .pageHeader {
     display: flex;
     line-height: 25px;
-    text-align: left;
-    padding: 10px 0 10px 30px;
     color: goldenrod;
 }
 
+.leftText {
+    text-align: left;
+    padding: 10px 0 10px 30px;
+}
+
 .centerText {
-    text-align: initial;
+    text-align: center;
     justify-content: center;
-    padding-left: 0;
+    padding-bottom: 10px;
 }
 
 .smallText {
@@ -135,6 +164,13 @@
 #spotifyPlayer {
     text-align: left;
     padding-left: 30px;
+    height: 20vh;
+    width: 70vw;
+}
+
+#spotify {
+    height: 20vh;
+    width: 70vw;
 }
 
 .purchaseLinks {
@@ -145,13 +181,21 @@
 }
 
 .purchaseLinks button {
-    width: 42vw;
+    width: 35vw;
     margin: 7px 0;
 }
 
 .purchaseLinks_divider {
     flex-direction: column;
-    flex: 50%;
+    align-content: flex-start;
+    flex: 40%;
+}
+
+.emptyFlexSpace1 {
+    flex: 5%;
+}
+.emptyFlexSpace2 {
+    flex: 15%;
 }
 
 .social {
@@ -162,7 +206,7 @@
 
 .social_bg {
     filter: opacity(.4);
-    height: 92vh;
+    height: 88vh;
     width: 100vw;
     position: absolute;
     z-index: -1;
@@ -170,16 +214,6 @@
     left: 0;
 }
 
-.social_bg_color {
-    background: linear-gradient(to left, rgb(88, 88, 88), #ccc);
-    height:92vh;
-    width: 95vw;
-    position: absolute;
-    top: 0;
-    left: -20px;
-    z-index: -2;
-    filter: opacity(.4);
-}
 
 .social h1 {
     text-align: center;
@@ -187,11 +221,13 @@
 
 .insta {
     margin: 10px 30px 10px 0;
+    height: 20vh;
+    width: 20vw;
 }
 
 .socialTwitterContainer {
     display: flex;
-    margin-top: 40px;
+    margin-top: 8vh;
 }
 
 .socialLinks {
@@ -207,8 +243,14 @@
 }
 
 .socialLinks a img {
-    height: 50px;
-    width: 50px;
+    height: 5vh;
+    width: 5vw;
+    filter: opacity(.5);
+    transition: filter .3s ease-in-out;
+}
+
+.socialLinks a img:hover {
+    filter: opacity(1);
 }
 
 .contact {
@@ -219,7 +261,7 @@
 
 .contact_bg {
     filter: opacity(.4);
-    height: 92vh;
+    height: 88vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -251,13 +293,12 @@
 .footer {
     display: flex;
     justify-content: flex-end;
-    background-color: whitesmoke;
     color: black;
     font-size: 12px;
 }
 
 .footerContainer {
-    background-color: whitesmoke;
+    background: linear-gradient(to left, #d4dfdd, #d9e2e3, #eff2f5);
     width: 100%;
     position: fixed;
     bottom: 0;

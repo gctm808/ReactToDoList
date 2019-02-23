@@ -6,7 +6,9 @@ const Contact = () => {
     return(
         <div className='contact'>
             <img src={require('../images/marlon.png')} alt='marlon' className='contact_bg' />
-            <h1>KEEP IN TOUCH</h1>
+            <div className='pageHeader centerText'>
+                <h1><span className='smallText'>KEEP</span><br/>IN TOUCH</h1>
+            </div>
             <h2>Next Performances/Appearances:</h2>
             <div className='nextPerformances'>
                 <div className='nextPerformances_div'>Nothing Currently Scheduled</div>
